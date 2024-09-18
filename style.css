@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento");
+body {
+    background-color: #1e1934;
+  }
+  
+  h1 {
+    position: fixed;
+    margin: 0 auto;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    width: 12em;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 100;
+    font-family: "Sacramento";
+    letter-spacing: 0.1em;
+    color: white;
+    text-shadow: 0 0 20px black;
+    opacity: 0.8;
+  }
+
+  img {
+    text-align: center;
+    
+  }
+  
