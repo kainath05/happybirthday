@@ -1,27 +1,38 @@
-@import url("https://fonts.googleapis.com/css?family=Sacramento");
 body {
-    background-color: #1e1934;
-  }
-  
-  h1 {
-    position: fixed;
-    margin: 0 auto;
-    bottom: 5%;
-    left: 0;
-    right: 0;
-    width: 12em;
-    text-align: center;
-    font-size: 2em;
-    font-weight: 100;
-    font-family: "Sacramento";
-    letter-spacing: 0.1em;
-    color: white;
-    text-shadow: 0 0 20px black;
-    opacity: 0.8;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
 
-  img {
-    text-align: center;
-    
-  }
-  
+.card {
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.candle-container {
+  position: relative;
+}
+
+#flame {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: flicker 1s infinite;
+}
+
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+#status {
+  margin-top: 20px;
+  font-size: 18px;
+}
