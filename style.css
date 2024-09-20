@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 body {
-  background-color: #f0f0f0;
+  background-image: url('border.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: "Amatic SC", Verdana;
+  margin: 0;
 }
 
 h1 {
   text-align: center;
   justify-content: center;
   font-size: 60px;
+  margin-top: 170px;
 }
 
 #status {
   font-size: 45px;
   text-align: center;
+
 }
 
 .candle-container {
@@ -20,24 +25,11 @@ h1 {
   align-items: center;
   text-align: center;
 }
-/* 
-#flame {
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: flicker 1s infinite;
-} */
 
 #flame {
   display: none;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-@keyframes flicker {
-  0% { opacity: 1; }
-  50% { opacity: 0.5; }
-  100% { opacity: 1; }
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

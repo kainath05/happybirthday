@@ -17,10 +17,11 @@ navigator.mediaDevices.getUserMedia({ audio: true })
             }
             const average = sum / dataArray.length;
 
-            if (average > 60) { // Threshold for detecting a loud sound
+            if (average > 60) { //blowing sound
                 document.getElementById('candle').style.display = 'none';
-                document.getElementById('flame').style.display = 'block';
+                document.getElementById('flame').style.display = 'flex';
                 document.getElementById('status').textContent = 'Candle blown out!';
+                document.getElementById('status').style.marginTop = '400px';
             }
 
             requestAnimationFrame(checkVolume);
