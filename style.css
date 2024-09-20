@@ -10,8 +10,9 @@ h1 {
   font-size: 60px;
 }
 
-h2 {
+#status {
   font-size: 45px;
+  text-align: center;
 }
 
 .candle-container {
@@ -19,13 +20,17 @@ h2 {
   align-items: center;
   text-align: center;
 }
-
+/* 
 #flame {
   position: absolute;
   top: -20px;
   left: 50%;
   transform: translateX(-50%);
   animation: flicker 1s infinite;
+} */
+
+#flame {
+  display: none;
 }
 
 @keyframes flicker {
@@ -33,8 +38,3 @@ h2 {
   50% { opacity: 0.5; }
   100% { opacity: 1; }
 }
-
-/* #status {
-  margin-top: 20px;
-  font-size: 18px;
-} */
