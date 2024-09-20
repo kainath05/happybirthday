@@ -31,6 +31,9 @@ h1 {
 
 #flame {
   display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 @keyframes flicker {
